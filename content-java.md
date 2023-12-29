@@ -55,3 +55,20 @@ int numero4, numero5, numero6; // variavel sem valor inicial, somente declarada
 ```
 
 Linhas de código em Java sempre terminam com ponto e virgula;
+
+---
+
+## Tipos primitivos e seus valores iniciais
+
+| tipos primitivos | bits | valor inicial padrão |
+| ---------------- | ---- | -------------------- |
+| byte             | 8    | 0                    |
+| short            | 16   | 0                    |
+| int              | 32   | 0                    |
+| long             | 64   | 0l                   |
+| float            | 32   | 0.0f                 |
+| double           | 64   | 0.0                  |
+| char             | 16   | \\'u000'             |
+| boolean          | 1    | false                |
+
+Vale lembrar que também temos o tipo **String** que é uma classe. Variáveis do tipo String guardam referências a objetos, e não um valor, como acontece com os tipos primitivos.
