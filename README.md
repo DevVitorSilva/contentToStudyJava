@@ -72,3 +72,41 @@ Linhas de código em Java sempre terminam com ponto e virgula;
 | boolean          | 1    | false                |
 
 Vale lembrar que também temos o tipo **String** que é uma classe. Variáveis do tipo String guardam referências a objetos, e não um valor, como acontece com os tipos primitivos.
+
+## Saida de dados
+
+Em Java tem algumas formas de saida de dados.
+
+1. `print` para saida de dados sem quebra de linha, **print** é de imprimir na tela.
+
+```java
+System.out.print("Hello world!");
+```
+
+2. `println` para saida de dados com quebra de linha, **ln** é de linha, imprime na tela e quebra uma linha.
+
+```java
+System.out.println("Hello world!");
+```
+
+3. `printf` para saida de dados formatados, **f** é de format, imprime na tela os dados formatados.
+
+```java
+int myAge = 22;
+System.out.printf("Hello world!, my age is %s", myAge);
+```
+
+**Máscaras para interpolação de dados usando o printf**
+
+- `%s` é usado para formatar texto.
+- `%f` é usado para formatar número de ponto flututante.
+- `%d` é usado para formatar número inteiro.
+- `%n` é usado para quebra de linha.
+- `\n` também usado para quebra de linha.
+- `\t` é usado para tabulação, dar um `Tab`.
+
+Observe: quando limita o número de casas decimais, perde a precisão do valor.
+
+## Locale
+
+`Locale.setDefault(Locale.US);` é usado para configurar em qual o local que sua aplicação irá ser usada, deve ser colocado no inicio do seu app.
