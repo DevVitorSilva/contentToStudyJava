@@ -110,3 +110,9 @@ Observe: quando limita o número de casas decimais, perde a precisão do valor.
 ## Locale
 
 `Locale.setDefault(Locale.US);` é usado para configurar em qual o local que sua aplicação irá ser usada, deve ser colocado no inicio do seu app.
+
+## Casting
+
+Casting é a conversão de tipo explicita.
+
+Link para saber mais sobre [casting](https://medium.com/@jhonata.ribeiro.ti/casting-impl%C3%ADcito-x-casting-expl%C3%ADcito-no-java-d635c506f1d5).
