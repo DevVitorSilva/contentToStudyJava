@@ -116,3 +116,24 @@ Observe: quando limita o número de casas decimais, perde a precisão do valor.
 Casting é a conversão de tipo explicita.
 
 Link para saber mais sobre [casting](https://medium.com/@jhonata.ribeiro.ti/casting-impl%C3%ADcito-x-casting-expl%C3%ADcito-no-java-d635c506f1d5).
+
+## Entrada de dados
+
+- `Scanner` usamos o Scanner para a entrada de dados no console, o Scanner já no pacote java.util.
+
+Criando uma entrada de dados string:
+
+```java
+Scanner sc = new Scanner(System.in); // instanciando a classe Scanner
+sc.next(); // usado para entrada de dados do tipo String
+sc.close(); // informa ao scanner que não haverá mais entradas de dados
+```
+
+Tipos de entrada de dados:
+
+`sc.close();` usado para quando não precisa mais do objeto sc.
+`sc.next();` usado para String.
+`sc.nextLine();` usado para ler a entrada até quebrar a linha, ou seja quando der enter.
+`sc.nextInt();` usado para entrada do tipo inteiro.
+`sc.nexDouble();` usado para entrada do tipo double, atenção quanse se usar, pois ele usa o padrão usado na localidade do sistema padrão. Lembre-se de usar o `Locale` para setar a localidade que deseja.
+`sc.next().charAt(0);` usado para pegar o primeiro caractere da entrada.
