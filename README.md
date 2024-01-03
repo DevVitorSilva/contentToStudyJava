@@ -132,8 +132,13 @@ sc.close(); // informa ao scanner que não haverá mais entradas de dados
 Tipos de entrada de dados:
 
 `sc.close();` usado para quando não precisa mais do objeto sc.
+
 `sc.next();` usado para String.
+
 `sc.nextLine();` usado para ler a entrada até quebrar a linha, ou seja quando der enter.
+
 `sc.nextInt();` usado para entrada do tipo inteiro.
+
 `sc.nexDouble();` usado para entrada do tipo double, atenção quanse se usar, pois ele usa o padrão usado na localidade do sistema padrão. Lembre-se de usar o `Locale` para setar a localidade que deseja.
+
 `sc.next().charAt(0);` usado para pegar o primeiro caractere da entrada.
