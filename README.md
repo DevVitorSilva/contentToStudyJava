@@ -157,14 +157,14 @@ Tipos de entrada de dados:
 
 Expressões comparativas o resultado é um boolean. O valor esquerdo é comparado com o com o valor direito.
 
-| operadores | significado       |
-| ---------- | ----------------- |
-| >          | maior que         |
-| <          | menor que         |
-| >=         | maior ou igual    |
-| <=         | menor ou igual    |
-| ==         | igual             |
-| !=         | diferente/negação |
+| operadores | significado    |
+| ---------- | -------------- |
+| >          | maior que      |
+| <          | menor que      |
+| >=         | maior ou igual |
+| <=         | menor ou igual |
+| ==         | igual          |
+| !=         | diferente      |
 
 ## Operadores aritméticos
 
@@ -187,3 +187,41 @@ Shorcut para operadores aritméticos:
 | \*=        | multiplicação           | a = a \* b; |
 | /=         | divisão                 | a = a / b;  |
 | %=         | módulo/resto da divisão | a = a % b;  |
+
+## Operadores lógicos
+
+| operadores | significado |
+| ---------- | ----------- |
+| &&         | e           |
+| \|\|       | ou          |
+| !          | negação     |
+
+Tabela verdade operador lógico `&&`
+
+- Só retorna `true` se todos forem `true`.
+
+| comparação        | retorno |
+| ----------------- | ------- |
+| `true` && `true`  | `true`  |
+| `true` && `false` | `false` |
+| `false` && `true` | `false` |
+
+Tabela verdade operador lógico `||`
+
+- Só retorna `false` se todos forem `false`.
+
+| comparação           | retorno |
+| -------------------- | ------- |
+| `true` \|\| `true`   | `true`  |
+| `true` \|\| `false`  | `true`  |
+| `false` \|\| `true`  | `true`  |
+| `false` \|\| `false` | `false` |
+
+Tabela verdade operador lógico `!`
+
+- Retorna `true` se for `false`, se for `false` retorna `true`.
+
+| comparação | retorno |
+| ---------- | ------- |
+| !`true`    | `false` |
+| !`false`   | `true`  |
