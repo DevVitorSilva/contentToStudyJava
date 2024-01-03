@@ -152,3 +152,16 @@ Tipos de entrada de dados:
 `Math.pow(value, value)` - usado para calcular a potência de um valor.
 
 `Math.abs(value)` - usado para calcular o valor absoluto de um valor.
+
+## Operadores comparativos
+
+Expressões comparativas o resultado é um boolean. O valor esquerdo é comparado com o com o valor direito.
+
+| operadores | significado       |
+| ---------- | ----------------- |
+| >          | maior que         |
+| <          | menor que         |
+| >=         | maior ou igual    |
+| <=         | menor ou igual    |
+| ==         | igual             |
+| !=         | diferente/negação |
