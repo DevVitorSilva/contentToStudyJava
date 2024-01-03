@@ -142,3 +142,13 @@ Tipos de entrada de dados:
 `sc.nexDouble();` usado para entrada do tipo double, atenção quanse se usar, pois ele usa o padrão usado na localidade do sistema padrão. Lembre-se de usar o `Locale` para setar a localidade que deseja.
 
 `sc.next().charAt(0);` usado para pegar o primeiro caractere da entrada.
+
+## Math
+
+**Math** é uma classe para calculos matemáticos, esta classe não precisa ser instanciada.
+
+`Math.sqrt(value)` - é usado para calcular a raiz quadrada de um valor.
+
+`Math.pow(value, value)` - usado para calcular a potência de um valor.
+
+`Math.abs(value)` - usado para calcular o valor absoluto de um valor.
