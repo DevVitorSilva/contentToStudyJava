@@ -177,3 +177,13 @@ Operadores aritméticos são operadores matemáticos comum.
 | \*         | multiplicação           |
 | /          | divisão                 |
 | %          | módulo/resto da divisão |
+
+Shorcut para operadores aritméticos:
+
+| operadores | significado             | exemplo     |
+| ---------- | ----------------------- | ----------- |
+| +=         | soma                    | a = a + b;  |
+| -=         | subtração               | a = a - b;  |
+| \*=        | multiplicação           | a = a \* b; |
+| /=         | divisão                 | a = a / b;  |
+| %=         | módulo/resto da divisão | a = a % b;  |
