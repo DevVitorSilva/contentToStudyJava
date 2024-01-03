@@ -165,3 +165,15 @@ Expressões comparativas o resultado é um boolean. O valor esquerdo é comparad
 | <=         | menor ou igual    |
 | ==         | igual             |
 | !=         | diferente/negação |
+
+## Operadores aritméticos
+
+Operadores aritméticos são operadores matemáticos comum.
+
+| operadores | significado             |
+| ---------- | ----------------------- |
+| +          | soma                    |
+| -          | subtração               |
+| \*         | multiplicação           |
+| /          | divisão                 |
+| %          | módulo/resto da divisão |
