@@ -1,12 +1,12 @@
 # Registro dos meus estudos de conteudo Java
 
+## Java ME, Java SE e Java EE
+
 Java ME - Java Micro Edition para IoT(internet das coisas).
 
 Java SE - Java Standard Edtion é o core.
 
 Java EE - Java Enterprise Edtion é um conjunto de especificações para apps corporativos.
-
----
 
 ## Estrutura de um app Java
 
@@ -16,15 +16,11 @@ Java EE - Java Enterprise Edtion é um conjunto de especificações para apps co
 - Runtime é o agrupamento fisico.
 - Aplicação é o agrupamento de módulos relacionados.
 
----
-
 ## Precedência de operadores
 
 1° **\*** (multiplicação), **/** (divisão), **%** (módulo, resto da divisão)
 
 2° +(soma), -(subtração)
-
----
 
 ## Como são declaradas as variáveis em Java
 
@@ -57,8 +53,6 @@ int numero4, numero5, numero6; // variavel sem valor inicial, somente declarada
 Vale lembrar que variáveis não inicializada não pode ser usada, o compilador irá acusar um erro.
 
 Linhas de código em Java sempre terminam com ponto e virgula;
-
----
 
 ## Tipos primitivos e seus valores iniciais
 
