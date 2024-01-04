@@ -277,3 +277,11 @@ No exemplo acima mostra a estrutura do `switch case`, no `switch` vai o valor de
 O operador ternário nada mais é que um `if else` simplificado. Geralmente usado em verificações condicionais onde não é necessário escrever muitas linhas de código.
 
 \<condição> `?` \<executa se atender a condição> `:` \<executa se a condição não for atendida>
+
+Exemplo:
+
+```java
+int numero = 10;
+
+numero == 10 ? System.out.println("É igual"); : System.out.println("Não é igual");
+```
