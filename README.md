@@ -180,13 +180,13 @@ Operadores aritméticos são operadores matemáticos comum.
 
 Shorcut para operadores aritméticos:
 
-| operadores | significado             | exemplo     |
-| ---------- | ----------------------- | ----------- |
-| +=         | soma                    | a = a + b;  |
-| -=         | subtração               | a = a - b;  |
-| \*=        | multiplicação           | a = a \* b; |
-| /=         | divisão                 | a = a / b;  |
-| %=         | módulo/resto da divisão | a = a % b;  |
+| operadores | significado             | seria o mesmo que |
+| ---------- | ----------------------- | ----------------- |
+| +=         | soma                    | a = a + b;        |
+| -=         | subtração               | a = a - b;        |
+| \*=        | multiplicação           | a = a \* b;       |
+| /=         | divisão                 | a = a / b;        |
+| %=         | módulo/resto da divisão | a = a % b;        |
 
 ## Operadores lógicos
 
@@ -225,3 +225,29 @@ Tabela verdade operador lógico `!`
 | ---------- | ------- |
 | !`true`    | `false` |
 | !`false`   | `true`  |
+
+## Estrutura condicional `if`, `else if` e `else`
+
+As estruturas condicionais permitem que um bloco de código seja executado somente **se** certa condição for atendida.
+
+| condicional | significado |
+| ----------- | ----------- |
+| `if`        | se          |
+| `else if`   | se não se   |
+| `else`      | se não      |
+
+Exemplos:
+
+```java
+int numero = 10;
+
+if(numero == 10){
+    System.out.println("É igual a 10");
+}else if(numero > 9){
+    System.out.println("É maior que 10");
+}else{
+    System.out.println("É igual a 10");
+}
+```
+
+No exemplo acima temos uma variável chamada `numero` com o valor de 10, logo em seguida ela é verificada se o `numero` é igual a 10, se for igual será impresso no console **É igual a 10**. Neste exemplo, o único bloco que será executado é o `if`, pois atende a condição passada, porém se não fosse o programa irá verificar nas demais condicionais, caso nenhuma condição fosse atendida ele iria executar o `else` e finalizaria a verificação condicional.
