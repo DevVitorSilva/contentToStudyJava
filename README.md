@@ -251,3 +251,27 @@ if(numero == 10){
 ```
 
 No exemplo acima temos uma variável chamada `numero` com o valor de 10, logo em seguida ela é verificada se o `numero` é igual a 10, se for igual será impresso no console **É igual a 10**. Neste exemplo, o único bloco que será executado é o `if`, pois atende a condição passada, porém se não fosse, o programa irá verificar nas demais condicionais, caso nenhuma condição fosse atendida ele iria executar o `else` e finalizaria a verificação condicional.
+
+## Condicional switch case
+
+O `switch case` é mais uma condicional, a diferença é a forma como se escreve, e que ele verifica se o valor fornecido é igual aos `case` fornecidos, se não atender nenhum dos `case` será executado o bloco `default`.
+
+Exemplo:
+
+```java
+int value = 1;
+
+switch(value){
+  case 15:
+    System.out.println("value é maior que 15");
+    break;
+  case 5:
+    System.out.println("value é menor que 5");
+    break;
+  default:
+    System.out.println("value é igual a " + value);
+    break;
+}
+```
+
+No exemplo acima mostra a estrutura do `switch case`, no `switch` vai o valor de condição, no `case` vai o valor que será comparado. Observe que só irá entrar em um bloco `case` caso o valor da condição seja igual ao valor de comparação, caso não seja o `switch` irá executar o bloco `default` e encerrar a condicional `switcth`. O `break` informa ao `switch` para que ele pare de verificar e que a condição foi atendida no bloco atual.
