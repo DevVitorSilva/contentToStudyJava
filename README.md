@@ -36,7 +36,7 @@ exemplo:
 int numeroInteiro = 10;
 ```
 
-Observer: as variáveis também podem ser declarada sem um valor inicial, e somente depois ser atribuido um valor a variável.
+Observe: as variáveis também podem ser declarada sem um valor inicial, e somente depois ser atribuido um valor a variável.
 
 exemplo:
 
@@ -53,6 +53,8 @@ exemplo:
 int numero1, numero2, numero3 = 10; // variavel declarada e inicializada
 int numero4, numero5, numero6; // variavel sem valor inicial, somente declarada
 ```
+
+Vale lembrar que variáveis não inicializada não pode ser usada, o compilador irá acusar um erro.
 
 Linhas de código em Java sempre terminam com ponto e virgula;
 
@@ -275,3 +277,9 @@ switch(value){
 ```
 
 No exemplo acima mostra a estrutura do `switch case`, no `switch` vai o valor de condição, no `case` vai o valor que será comparado. Observe que só irá entrar em um bloco `case` caso o valor da condição seja igual ao valor de comparação, caso não seja o `switch` irá executar o bloco `default` e encerrar a condicional `switcth`. O `break` informa ao `switch` para que ele pare de verificar e que a condição foi atendida no bloco atual.
+
+## Operador ternário
+
+O operador ternário nada mais é que um `if else` simplificado. Geralmente usado em verificações condicionais onde não é necessário escrever muitas linhas de código.
+
+\<condição> `?` \<executa se atender a condição> `:` \<executa se a condição não for atendida>
