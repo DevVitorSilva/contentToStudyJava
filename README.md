@@ -222,6 +222,14 @@ Tabela verdade operador lógico `!`
 | !`true`    | `false` |
 | !`false`   | `true`  |
 
+## Operador bitwise
+
+| operadores | significado  |
+| ---------- | ------------ |
+| &&         | e            |
+| \|         | ou           |
+| ^          | ou exclusivo |
+
 ## Estrutura condicional `if`, `else if` e `else`
 
 As estruturas condicionais permitem que um bloco de código seja executado somente **se** certa condição for atendida.
