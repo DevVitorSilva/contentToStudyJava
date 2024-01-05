@@ -301,4 +301,19 @@ while(n<100){
 }
 ```
 
-No exemplo acima temos um programa que irá contar até 99.
+No exemplo acima temos um programa que irá contar até 99. A lógica de funcionamento é o seguinte: primeiro ele verifica a condição e depois executa o bloco de comandos, caso seja a condição seja falsa o bloco de comandos não será executado.
+
+## Loop de repetição `do while`
+
+Diferente do `while`, o `do while` executa primeiramente o bloco de comandos e somente depois faz a verificação da condição.
+
+Exemplo:
+
+```java
+int n = 0;
+
+do{
+	System.out.println(n);
+  n++;
+}while(n<100)
+```
