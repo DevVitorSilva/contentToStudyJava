@@ -285,3 +285,20 @@ int numero = 10;
 
 numero == 10 ? System.out.println("É igual"); : System.out.println("Não é igual");
 ```
+
+## Loop de repetição `while`
+
+O loop de repetição `while` repete o bloco de comando enquanto uma condição for verdadeira(true).
+
+Exemplo:
+
+```java
+int n = 0;
+
+while(n<100){
+	System.out.println(n);
+  n++;
+}
+```
+
+No exemplo acima temos um programa que irá contar até 99.
