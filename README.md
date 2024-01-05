@@ -319,3 +319,19 @@ do{
 ```
 
 No exemplo acima temos um app que irá contar até 99, porém escrito usando o loop de repetição `do while`.
+
+## Loop de repetição `for`
+
+O `for` é mais uma forma de fazer loops de repetição em Java, diferente do `while` e `do while`, o `for` tem uma sintaxe diferente.
+
+Exemplo:
+
+```java
+for(int index = 0; index < 100; index++){
+  System.out.println(index);
+}
+```
+
+No exemplo acima temos mais um app que irá contar até 99, porém usando o loop `for`.
+
+No loop `for` temos o `index` que é uma variável do tipo inteiro que será usado como um contador, essa variável sempre deve ser inicializada com algum valor. Temos também a condição `index < 100` que irá ser usada para colocar um limite até onde o loop irá ser executado. E por último temos o `index++`, que é um incremento de `index`, ou seja, é `index` + 1. Quando o loop está sendo executado ele irá verificar a condição, se a condição é verdadeira ele soma + ao `index` e executa o bloco de comandos, quando a condição se tornar falsa ele irá sair do loop.
