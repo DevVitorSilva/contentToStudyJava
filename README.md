@@ -416,3 +416,24 @@ for(int index = 0; index < names.length; index++){
   System.out.println(names[index]); // serão duas saidas: 1° 'John' e 2° 'Doe'
 }
 ```
+
+## Comentários
+
+Os comentários não são interpretados pelo compilador.
+
+- `//` usado para fazer comentário em linha, será um comentário até quebrar a linha.
+
+```java
+// este é um comentário em linha
+```
+
+- `/* */` usado para fazer blocos de comentários, será um comtário enquanto estiver dentro do bloco.
+
+```java
+/*
+  este é
+  um bloco
+  de
+  comentários
+*/
+```
