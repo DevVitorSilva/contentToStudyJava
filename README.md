@@ -427,7 +427,7 @@ Os comentários não são interpretados pelo compilador.
 // este é um comentário em linha
 ```
 
-- `/* */` usado para fazer blocos de comentários, será um comtário enquanto estiver dentro do bloco.
+- `/* */` usado para fazer blocos de comentários, será um comentário enquanto estiver dentro do bloco.
 
 ```java
 /*
