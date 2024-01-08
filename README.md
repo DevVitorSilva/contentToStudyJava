@@ -343,3 +343,76 @@ for(int index = 0; index < 100; index++){
 No exemplo acima temos mais um app que irá contar até 99, porém usando o loop `for`.
 
 No loop `for` temos o `index` que é uma variável do tipo inteiro que será usado como um contador, essa variável sempre deve ser inicializada com algum valor. Temos também a condição `index < 100` que irá ser usada para colocar um limite até onde o loop irá ser executado. E por último temos o `index++`, que é um incremento de `index`, ou seja, é `index` + 1. Quando o loop está sendo executado ele irá verificar a condição, se a condição é verdadeira ele soma +1 ao `index` e executa o bloco de comandos, quando a condição se tornar falsa ele irá sair do loop.
+
+## Métodos para String
+
+**Formatar**
+
+- `toLowerCase()` transforma toda a String em minúscula.
+
+```java
+String hello = "Hello World!";
+
+hello.toLowerCase(); // a saida será 'hello world!'
+```
+
+- `toUpperCase()` transforma toda a String em maiúscula.
+
+```java
+String hello = "Hello World!";
+
+hello.toUpperCase(); // a saida será 'HELLO WORLD!'
+```
+
+- `trim()` remove os espaços em branco do inicio e fim da String.
+
+```java
+String name = "  John Doe  ";
+System.out.println(name.trim()); // a saida será 'John Doe'
+```
+
+**Recortar**
+
+- `substring()` retorna uma substring da String atual. Este método pode receber dois parâmetros, o primeiro é indice inicial: é onde irá iniciar sua substring, o segundo é indice final: é onde irá terminar sua substring.
+
+```java
+String name = "John Doe";
+System.out.println(name.substring(0,4)); // a saida será 'John'
+```
+
+**Substituir**
+
+- `replace()` método procura por um caractere especificado como parâmetro, e retorna uma nova String com o caractere trocado por um outro caractere que é passado como segundo parâmetro.
+
+```java
+String name = "John Doe";
+System.out.println(name.replace('o','1')); // a saida será 'J1hn D1e'
+```
+
+**Buscar**
+
+- `indexOf()` retorna a posição do primeiro caractere encontrado dentro da String especificada.
+
+```java
+String name = "John Doe";
+System.out.println(name.indexOf('o')); // a saida será 1
+```
+
+- `lastIndexOf()` retorna a posição do último caractere encontrado dentro da String especificada.
+
+```java
+String name = "John Doe";
+System.out.println(name.lastIndexOf('o')); // a saida será 6
+```
+
+**Fatiar**
+
+- `split()` retorna um Array de substrings a partir de um caractere passado por parâmetro.
+
+```java
+String name = "John Doe";
+String[] names = name.split(" ");
+for(int index = 0; index < names.length; index++){
+  System.out.println(names[index]); // serão duas saidas: 1° 'John' e 2° 'Doe'
+}
+```
