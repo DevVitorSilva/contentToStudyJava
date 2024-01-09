@@ -443,9 +443,7 @@ Os comentários não são interpretados pelo compilador.
 Em OOP(Object Oriented Programing), funções em classes recebem o nome de **métodos**.
 
 - `public` disponibiliza a função em outras classes.
-
 - `static` permite a função ser chamada sem a necessidade de criar um objeto.
-
 - `double` é o tipo de dado que será retornado quando o método/função for execultado.
 
 ```java
@@ -473,19 +471,14 @@ public class Calc{
 Classes é um **tipo** estruturado que pode conter membros:
 
 - Atributos(dados/campos)
-
 - Métodos(funções/operações)
 
 A classes também pode prover muitos outros recursos, tais como:
 
 - Construtores
-
 - Sobrecarga
-
 - Encapsulamento
-
 - Herança
-
 - Polimorfismo
 
 Classes é a difinição de tipo. Objetos são instâncias da classe.
@@ -497,13 +490,9 @@ Toda classe em java é uma subclasse da classe `Object`.
 `Object` possui os métodos:
 
 - `getClass` retorna o tipo do objeto.
-
 - `equals` compara se o objeto é igual a outro.
-
 - `hashCode` retorna um código hash do objeto.
-
 - `toString` converte o objeto para String.
-
 - `format` retorna uma String formatada usando as especificações passadas e os argumentos.
 
 ## Membros estáticos
@@ -513,7 +502,6 @@ Também chamados membros de classe, em oposição a membros e instância. São m
 Aplicações comuns:
 
 - Classes utilitárias
-
 - Declaração de constantes
 
 Uma classe que possui somente membros estáticos, pode ser uma classe estática também. Esta classe não poderá ser instanciadas.
