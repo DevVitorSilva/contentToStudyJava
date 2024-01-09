@@ -437,3 +437,33 @@ Os comentários não são interpretados pelo compilador.
   comentários
 */
 ```
+
+## Funções
+
+Em OOP(Object Oriented Programing), funções em classes recebem o nome de **métodos**.
+
+- `public` disponibiliza a função em outras classes.
+
+- `static` permite a função ser chamada sem a necessidade de criar um objeto.
+
+- `double` é o tipo de dado que será retornado quando o método/função for execultado.
+
+```java
+public class Calc{
+  public static double sum(double firstValue, double secondValue){
+    return firstValue + secondValue;
+  }
+
+  public static double sub(double firstValue, double secondValue){
+    return firstValue - secondValue;
+  }
+
+  public static double mult(double firstValue, double secondValue){
+    return firstValue * secondValue;
+  }
+
+  public static double div(double firstValue, double secondValue){
+    return firstValue / secondValue;
+  }
+}
+```
