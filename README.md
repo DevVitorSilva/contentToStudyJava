@@ -505,3 +505,17 @@ Toda classe em java é uma subclasse da classe `Object`.
 - `toString` converte o objeto para String.
 
 - `format` retorna uma String formatada usando as especificações passadas e os argumentos.
+
+## Membros estáticos
+
+Também chamados membros de classe, em oposição a membros e instância. São membros que fazem sentido independente de objetos. Não precisam de objetos para serem chamados, não precisa instanciar a classe. São chamados a partir do próprio nome da classe.
+
+Aplicações comuns:
+
+- Classes utilitárias
+
+- Declaração de constantes
+
+Uma classe que possui somente membros estáticos, pode ser uma classe estática também. Esta classe não poderá ser instanciadas.
+
+Observe: não é possivel chamar um método/função que não é estático dentro de um que é estático.
