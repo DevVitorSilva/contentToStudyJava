@@ -438,7 +438,7 @@ Os comentários não são interpretados pelo compilador.
 */
 ```
 
-## Funções
+## Funções OOP
 
 Em OOP(Object Oriented Programing), funções em classes recebem o nome de **métodos**.
 
@@ -467,3 +467,41 @@ public class Calc{
   }
 }
 ```
+
+## Classes OOP
+
+Classes é um **tipo** estruturado que pode conter membros:
+
+- Atributos(dados/campos)
+
+- Métodos(funções/operações)
+
+A classes também pode prover muitos outros recursos, tais como:
+
+- Construtores
+
+- Sobrecarga
+
+- Encapsulamento
+
+- Herança
+
+- Polimorfismo
+
+Classes é a difinição de tipo. Objetos são instâncias da classe.
+
+**this** é uma alto referência para o objeto.
+
+Toda classe em java é uma subclasse da classe `Object`.
+
+`Object` possui os métodos:
+
+- `getClass` retorna o tipo do objeto.
+
+- `equals` compara se o objeto é igual a outro.
+
+- `hashCode` retorna um código hash do objeto.
+
+- `toString` converte o objeto para String.
+
+- `format` retorna uma String formatada usando as especificações passadas e os argumentos.
