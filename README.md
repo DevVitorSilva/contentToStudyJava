@@ -495,7 +495,7 @@ Toda classe em java é uma subclasse da classe `Object`.
 - `toString` converte o objeto para String.
 - `format` retorna uma String formatada usando as especificações passadas e os argumentos.
 
-## Membros estáticos
+## Membros estáticos OOP
 
 Também chamados membros de classe, em oposição a membros e instância. São membros que fazem sentido independente de objetos. Não precisam de objetos para serem chamados, não precisa instanciar a classe. São chamados a partir do próprio nome da classe.
 
@@ -507,3 +507,14 @@ Aplicações comuns:
 Uma classe que possui somente membros estáticos, pode ser uma classe estática também. Esta classe não poderá ser instanciadas.
 
 Observe: não é possivel chamar um método/função que não é estático dentro de um que é estático.
+
+## Construtores OOP
+
+Construtores são uma operação especial da classe, que é executada no momento da instanciação do objeto.
+
+Usos comum:
+
+- Iniciar valores dos atributos.
+- Permitir ou obrigar que o objeto receba dados/dependências no momento de sua instanciação(injeção de dependência).
+- Se um construtor customizado não for especificado, a classe disponibiliza o construtor padrão: `Product p = new Product();`.
+- É possível especificar mais de um construtor na mesma classe(sobrecarga).
