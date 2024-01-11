@@ -518,3 +518,27 @@ Usos comum:
 - Permitir ou obrigar que o objeto receba dados/dependências no momento de sua instanciação(injeção de dependência).
 - Se um construtor customizado não for especificado, a classe disponibiliza o construtor padrão: `Product p = new Product();`.
 - É possível especificar mais de um construtor na mesma classe(sobrecarga).
+
+## Palavra `this` OOP
+
+A palavra `this` é uma referência para o próprio objeto.
+
+Uso comum:
+
+- Diferenciar atributos de variáveis locais.
+- Passar o próprio objeto como argumento na chamada de um método ou construtor.
+
+```java
+public class People{
+  // variáveis locais
+  String name;
+  int age;
+
+  // atributos do construtor personalizado
+  public People(String name, int age){
+    // atribuindo os valores recebidos como parâmetro para as variáveis locais da classe
+    this.name = name;
+    this.age = age;
+  }
+}
+```
