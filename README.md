@@ -542,3 +542,27 @@ public class People{
   }
 }
 ```
+
+## Sobrecarga OOP
+
+Sobrecarga é um recurso que uma classe possui de oferecer mais de uma operação com o mesmo nome, porém com diferentes listas de parâmetros.
+
+```java
+public class People{
+  String name;
+  int age;
+
+  public People(){}
+
+  public People(String name){
+    this.name = name;
+  }
+
+  public People(String name, int age){
+    this.name = name;
+    this.age = age;
+  }
+}
+```
+
+No código acima temos três contrutores, dessa forma quando for instânciar a classe podemos passar ou não os atributos.
