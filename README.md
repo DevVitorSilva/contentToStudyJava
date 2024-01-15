@@ -566,3 +566,52 @@ public class People{
 ```
 
 No código acima temos três contrutores, dessa forma quando for instânciar a classe podemos passar ou não os atributos.
+
+## Ecapsulamento OOP
+
+Ecapsulamento é um principio que consiste em esconder detalhes de implementação de uma classe, expondo apenas operações seguras e que mantenham os objetos em um estado consistente.
+
+**Regra de ouro**: o objeto deve sempre estar em um estado consistente, e a própria classe deve garantir isso.
+
+Regra geral básica:
+
+- Um objeto **não** deve expor nenhum atributo(modificador de acesso `private`).
+- Os atributos devem ser acessados por meio de métodos `get` e `set`.
+
+Exemplo:
+
+```java
+public class People{
+  private String name;
+  private int age;
+
+  public People(){}
+
+  public People(String name){
+    this.name = name;
+  }
+
+  public People(String name, int age){
+    this.name = name;
+    this.age = age;
+  }
+
+  public String getName(){
+    return this.name;
+  }
+
+  public void setName(String name){
+    this.name = name;
+  }
+
+  public int getAge(){
+    return this.age;
+  }
+
+  public void setAge(int age){
+    this.age = age;
+  }
+}
+```
+
+No exemplo acima foi usado encapsulamento, onde os métodos da classe `People` são privados e só podem ser acessados e modificados pelos métodos `get` e `set`.
