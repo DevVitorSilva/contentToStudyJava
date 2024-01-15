@@ -615,3 +615,5 @@ public class People{
 ```
 
 No exemplo acima foi usado encapsulamento, onde os métodos da classe `People` são privados e só podem ser acessados e modificados pelos métodos `get` e `set`.
+
+Observe: no IntelliJ IDE, há como criar os métodos `get` e `set` de forma automática sem precisar digitar tudo. Uma recomendação pessoal é que se é seu primeiro contato com Java, não faça de modo automático para que você vá se acostumando com sintaxe da linguagem.
