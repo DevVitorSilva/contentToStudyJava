@@ -617,3 +617,10 @@ public class People{
 No exemplo acima foi usado encapsulamento, onde os métodos da classe `People` são privados e só podem ser acessados e modificados pelos métodos `get` e `set`.
 
 Observe: no IntelliJ IDE, há como criar os métodos `get` e `set` de forma automática sem precisar digitar tudo. Uma recomendação pessoal é que, se é seu primeiro contato com Java, não faça de modo automático, realmente escreva o código para que você vá se acostumando com sintaxe da linguagem.
+
+## Modificadores de acesso OOP
+
+- `private`: o membro só pode ser acessado na própria classe.
+- (nada): o membro só pode ser acessado nas classes do mesmo pacote.
+- `protected`: o membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes digferentes.
+- `public`: o mebro é acessado por todas as classes(ao menos que ele resida em um módulo diferente que não exporte o pacote onde ele está).
