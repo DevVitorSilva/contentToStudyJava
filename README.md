@@ -621,6 +621,33 @@ Observe: no IntelliJ IDE, há como criar os métodos `get` e `set` de forma auto
 ## Modificadores de acesso OOP
 
 - `private`: o membro só pode ser acessado na própria classe.
+
+```java
+public class People{
+  private String name;
+}
+```
+
 - (nada): o membro só pode ser acessado nas classes do mesmo pacote.
-- `protected`: o membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes digferentes.
+
+```java
+public class People{
+  String name;
+}
+```
+
+- `protected`: o membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes diferentes.
+
+```java
+public class People{
+  protected String name;
+}
+```
+
 - `public`: o mebro é acessado por todas as classes(ao menos que ele resida em um módulo diferente que não exporte o pacote onde ele está).
+
+```java
+public class People{
+  public String name;
+}
+```
