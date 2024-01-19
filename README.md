@@ -652,7 +652,7 @@ public class People{
 }
 ```
 
-## Tipos de referência
+## Tipos referência
 
 Recomanda-se ter um pouco de entendimento sobre memória **stack** e **heap**. Leia esse [debate no stackoverflow](https://pt.stackoverflow.com/questions/3797/o-que-s%C3%A3o-e-onde-est%C3%A3o-a-stack-e-heap) para ter mais conhecimento sobre memória **stack** e **heap**.
 
