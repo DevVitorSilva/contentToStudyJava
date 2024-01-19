@@ -678,3 +678,5 @@ Passo a passo:
 ## Valor `null`
 
 Tipos de referência aceitam o valor `null`, que indica que a variável aponta pra ninguém.
+
+![Exemplo de valor null na memória](./images/valueNull.svg)
