@@ -675,6 +675,8 @@ Passo a passo:
 2. Encontra um id que faz referência aos valores que estão armazenados na **heap**
 3. Busca os valores na **heap**
 
+**Atenção**: cuidado ao declarar variáveis que recebem outra variável de tipos referência, pois como elas irão apontar para o mesmo valor, caso mude o valor de umas delas as duas serão alteradas.
+
 ## Valor `null`
 
 Tipos de referência aceitam o valor `null`, que indica que a variável aponta pra ninguém.
