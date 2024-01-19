@@ -674,3 +674,7 @@ Passo a passo:
 1. A aplicação busca a variável na **stack**
 2. Encontra um id que faz referência aos valores que estão armazenados na **heap**
 3. Busca os valores na **heap**
+
+## Valor `null`
+
+Tipos de referência aceitam o valor `null`, que indica que a variável aponta pra ninguém.
