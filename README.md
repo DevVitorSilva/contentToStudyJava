@@ -651,3 +651,26 @@ public class People{
   public String name;
 }
 ```
+
+## Tipos de referência
+
+Recomanda-se ter um pouco de entendimento sobre memória **stack** e **heap**. Leia esse [debate no stackoverflow](https://pt.stackoverflow.com/questions/3797/o-que-s%C3%A3o-e-onde-est%C3%A3o-a-stack-e-heap) para ter mais conhecimento sobre memória **stack** e **heap**.
+
+Classes são do tipo referência. Variáveis cujo tipo são classes não devem ser entendidas como caixas, mas sim "tentáculos"(ponteiros) para caixas.
+
+```java
+Product p1 = new Product("Smartphone", 2500.00);
+Product p2 = p1;
+```
+
+Exemplo como funciona a alocação de memória para tipos de referência, exemplo do código acima:
+
+![representação de alocação de memória para tipos de referência](./images/memoryStackAndHeap.svg)
+
+Quando se usa tipos de referência, os valores são armazenados na memória heap, onde gerado um id, esse id é armazenado na memória **stack** que faz referência onde se encontra a variável na memória **heap**.
+
+Passo a passo:
+
+1. A aplicação busca a variável na **stack**
+2. Encontra um id que faz referência aos valores que estão armazenados na **heap**
+3. Busca os valores na **heap**
