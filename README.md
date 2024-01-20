@@ -706,3 +706,15 @@ Quando alocamos (new) qualquer tipo estruturado (classes e arrays), são atribu�
 - boolean: false
 - char: caractere código 0
 - objeto: null
+
+## Tipos referência vs tipos valor
+
+| Classe                                                                                 | Tipo primitivo                                                                     |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Usufrui de todos recursos OO                                                           | É mais simples e mais perfomático                                                  |
+| Variáveis são ponteiros                                                                | Variáveis são caixas                                                               |
+| Objetos precisam ser instanciadas usando `new`, ou apontar para um objeto já existente | Não instancia. Uma vez declarados, estão prontos para uso                          |
+| Aceita valor `null`                                                                    | Não aceita valor `null`                                                            |
+| Y = X; "Y passa a apontar para onde X aponta"                                          | Y = X; "Y recebe uma cópia de X"                                                   |
+| Objetos instanciados no heap                                                           | "Objetos" instanciados no stack                                                    |
+| Objetos não utilizados são desalocados em um momento próximo pelo garbage collector    | "Objetos" são desalocados imediatamente quando seu escopo de execução é finalizado |
