@@ -667,13 +667,13 @@ Exemplo como funciona a alocação de memória para tipos de referência, exempl
 
 ![representação de alocação de memória para tipos de referência](./images/memoryStackAndHeap.svg)
 
-Quando se usa tipos de referência, os valores são armazenados na memória heap, onde gerado um id, esse id é armazenado na memória **stack** que faz referência onde se encontra a variável na memória **heap**.
+Quando se usa tipos de referência, os valores são armazenados na memória heap, na memória **stack** fica armazenado somente um ponteiro(como se fosse um id) que aponta para os valores na memória **heap**.
 
 Passo a passo:
 
 1. A aplicação busca a variável na **stack**
-2. Encontra um id que faz referência aos valores que estão armazenados na **heap**
-3. Busca os valores na **heap**
+2. Encontra um ponteiro(id) que faz referência aos valores que estão armazenados na **heap**
+3. Busca os valores na **heap** e trás os valores para nossa aplicação
 
 **Atenção**: cuidado ao declarar variáveis que recebem outra variável de tipos referência, pois como elas irão apontar para o mesmo valor, caso mude o valor de umas delas as duas serão alteradas.
 
@@ -683,7 +683,7 @@ Tipos de referência aceitam o valor `null`, que indica que a variável aponta p
 
 ![Exemplo de valor null na memória](./images/valueNull.svg)
 
-## Tipos primitivos
+## Tipos valor
 
 Os tipos primitivos são valores. Em Java tipos primitivos são tipos valor. Tipos valor são caixas e não ponteiros.
 
@@ -695,3 +695,5 @@ double y = x;
 `y` recebe uma cópia de `x`, se o valor de `y` for alterado não irá alterar o valor de `x`.
 
 ![representação de alocação de memória para tipos de valor](./images/usingMemoryStack.svg)
+
+Tipos primitivos que são tipos valor, são armazenados diretamente na memória **stack**. Isso significa que o acesso de tipos primitivos são mais rápidos que os tipos de referência.
