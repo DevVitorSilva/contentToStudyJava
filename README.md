@@ -682,3 +682,16 @@ Passo a passo:
 Tipos de referência aceitam o valor `null`, que indica que a variável aponta pra ninguém.
 
 ![Exemplo de valor null na memória](./images/valueNull.svg)
+
+## Tipos primitivos
+
+Os tipos primitivos são valores. Em Java tipos primitivos são tipos valor. Tipos valor são caixas e não ponteiros.
+
+```java
+double x = 10;
+double y = x;
+```
+
+`y` recebe uma cópia de `x`, se o valor de `y` for alterado não irá alterar o valor de `x`.
+
+![representação de alocação de memória para tipos de valor](./images/usingMemoryStack.svg)
