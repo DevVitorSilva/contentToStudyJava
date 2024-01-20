@@ -702,10 +702,12 @@ Tipos primitivos que são tipos valor, são armazenados diretamente na memória 
 
 Quando alocamos (new) qualquer tipo estruturado (classes e arrays), são atribuídos valores padrão aos seus elementos.
 
-- números: 0
-- boolean: false
-- char: caractere código 0
-- objeto: null
+| Tipo    | Valor padrão       |
+| ------- | ------------------ |
+| números | 0                  |
+| boolean | false              |
+| char    | caractere código 0 |
+| objeto  | null               |
 
 ## Tipos referência vs tipos valor
 
