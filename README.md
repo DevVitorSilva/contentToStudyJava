@@ -727,6 +727,8 @@ Garbage Collector é um processo que automatiza o gerenciamento de memória de u
 
 Um objeto que não possui referência(ponteiro), ou que perdeu a referência, será desalocado pelo Garbage Collector em breve.
 
+Objetos alocados dinamicamente, quando não possuem mais referência para eles, serão desalocados pelo Garbage Collector.
+
 ## Desalocação de memória por escopo
 
 Variáveis locais são desalocadas imediatamente assim que seu escopo local sai de execução.
