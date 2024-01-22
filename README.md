@@ -726,3 +726,21 @@ Quando alocamos (new) qualquer tipo estruturado (classes e arrays), são atribu�
 Garbage Collector é um processo que automatiza o gerenciamento de memória de um programa em execução. O Garbage Collector monitora os objetos alocados dinamicamente pelo programa(no heap), desalocando aqueles que não estão mais sendo utilizados.
 
 Um objeto que não possui referência(ponteiro), ou que perdeu a referência, será desalocado pelo Garbage Collector em breve.
+
+## Desalocação de memória por escopo
+
+Variáveis locais são desalocadas imediatamente assim que seu escopo local sai de execução.
+
+```java
+void method1() {
+  int x = 10;
+  if(x > 0) {
+    int y = 20;
+  }
+  System.out.println(x);
+}
+```
+
+No exemplo acima, a variável `y` será desalocada da **stack** assim que o bloco `if` for finalizado, o mesmo se aplica ao `method1`, todas as variáveis serão assim que sua execução for finalizada.
+
+Sempre que um escopo for finalizado, as variáveis criadas dentro do mesmo, serão desalocadas da memória **stack**.
