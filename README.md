@@ -720,3 +720,9 @@ Quando alocamos (new) qualquer tipo estruturado (classes e arrays), são atribu�
 | Y = X; "Y passa a apontar para onde X aponta"                                          | Y = X; "Y recebe uma cópia de X"                                                   |
 | Objetos instanciados no heap                                                           | "Objetos" instanciados no stack                                                    |
 | Objetos não utilizados são desalocados em um momento próximo pelo garbage collector    | "Objetos" são desalocados imediatamente quando seu escopo de execução é finalizado |
+
+## Desalocação de memória Garbage Collector
+
+Garbage Collector é um processo que automatiza o gerenciamento de memória de um programa em execução. O Garbage Collector monitora os objetos alocados dinamicamente pelo programa(no heap), desalocando aqueles que não estão mais sendo utilizados.
+
+Um objeto que não possui referência(ponteiro), ou que perdeu a referência, será desalocado pelo Garbage Collector em breve.
