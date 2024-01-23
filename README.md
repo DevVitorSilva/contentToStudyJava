@@ -746,3 +746,88 @@ void method1() {
 No exemplo acima, a variável `y` será desalocada da **stack** assim que o bloco `if` for finalizado, o mesmo se aplica ao `method1`, todas as variáveis serão assim que sua execução for finalizada.
 
 Sempre que um escopo for finalizado, as variáveis criadas dentro do mesmo, serão desalocadas da memória **stack**.
+
+## Vetores `Arrays`
+
+Em programação, "vetor" é o nome dado a arranjos unidimencionais.
+
+Arranjo(Array) é uma estrutura de dados:
+
+- Homogênea (dados do mesmo tipo)
+- Ordenada (elementos acessados por meio de posições)
+- Alocada de uma vez só, em um bloco contíguo de memória
+
+Vantagens:
+
+- Acesso imediato aos elementos pela sua posição
+
+Desvantagens:
+
+- Tamanho fixo
+- Dificuldade para se realizar inserções e deleções
+
+No arrays de tipos primitivos, o tamanho do array é limitado, o `length` do array é declarado no momento em que a variável é criada.
+
+```java
+double[] meuVetor = new double[3];
+meuVetor[0] = 1.0;
+meuVetor[1] = 2.0;
+meuVetor[2] = 3.0;
+
+// listando todos os elementos do array
+for(int i = 0; i < meuVetor.length; i++){
+  System.out.println(meuVetor[i]);
+}
+```
+
+O indice do array sempre começa com 0(zero).
+
+Outra maneira de declarar um array de tamanho limitado:
+
+```java
+double[] meuVetor = new double[1.0, 2.0, 3.0];
+```
+
+**Arrays de tipos referência**
+
+```java
+// criando um tipo estruturado
+public class Product{
+  private String name;
+  private double value;
+
+  public Product(String name, double value){
+    this.name = name;
+    this.value = value;
+  }
+
+  public String getName(){
+    return this.name;
+  }
+
+  public void setName(String name){
+    this.name = name;
+  }
+
+  public String getValue(){
+    return this.value;
+  }
+
+  public void setValue(String name){
+    this.name = name;
+  }
+}
+
+Product[] products = new Product[2];
+
+products[0].setName("smartphone");
+products[0].setValue(2500.00);
+
+products[1].setName("smartwatch");
+products[1].setValue(3500.00);
+
+// listando todos os elementos do array
+for(int i = 0; i < products.length; i++){
+  System.out.println(products[i]);
+}
+```
