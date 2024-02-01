@@ -766,7 +766,9 @@ Desvantagens:
 - Tamanho fixo
 - Dificuldade para se realizar inserções e deleções
 
-No arrays de tipos primitivos, o tamanho do array é limitado, o `length` do array é declarado no momento em que a variável é criada.
+O tamanho do array é limitado, o `length`(tamanho) do array é declarado no momento em que a variável é criada.
+
+`Array.length` para saber o tamanho do array, começa a contar a partir de um (1).
 
 ```java
 double[] meuVetor = new double[3];
@@ -789,6 +791,8 @@ double[] meuVetor = new double[1.0, 2.0, 3.0];
 ```
 
 **Arrays de tipos referência**
+
+Quando se cria um Array do tipo referência, os valores iniciais são `null`.
 
 ```java
 // criando um tipo estruturado
