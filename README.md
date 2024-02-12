@@ -861,3 +861,14 @@ int mySecondNumber = myNumber; // passa a ser um tipo valor
 Wrapper class são classes equivalentes aos tipos primitivos. Boxing e unboxing é natural na linguagem. Uso comum de wrapper class são: em campos de entidade em sistemas de informação(importante!), pois tipos referência (classes) aceitam valor `null` e usufruem dos recursos OOP.
 
 ![wrapper class demostração](./images/wrapperClass.svg)
+
+## Laço `for each`
+
+For each é uma sintaxe opcional e simplificada para percorrer coleções.
+
+```java
+int[] numbers = new int[]{1,2,3,4,5};
+for(int number : numbers){
+  System.out.println(number);
+}
+```
