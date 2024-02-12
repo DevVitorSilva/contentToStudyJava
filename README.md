@@ -757,11 +757,11 @@ Arranjo(Array) é uma estrutura de dados:
 - Ordenada (elementos acessados por meio de posições)
 - Alocada de uma vez só, em um bloco contíguo de memória
 
-Vantagens:
+**Vantagens**:
 
 - Acesso imediato aos elementos pela sua posição
 
-Desvantagens:
+**Desvantagens**:
 
 - Tamanho fixo
 - Dificuldade para se realizar inserções e deleções
@@ -835,3 +835,29 @@ for(int i = 0; i < products.length; i++){
   System.out.println(products[i]);
 }
 ```
+
+## Boxing, unboxing e wrapper class
+
+### Boxing
+
+Boxing é o processo de conversão de um objeto tipo valor para um objeto tipo referência compatível.
+
+```java
+int number = 10;
+Integer secondNumber = number; // passa a ser um tipo de referência
+```
+
+### Unboxing
+
+Unboxing é o processo de conversão de um objeto tipo referência para um objeto tipo valor compatível.
+
+```java
+Integer myNumber = 10;
+int mySecondNumber = myNumber; // passa a ser um tipo valor
+```
+
+### Wrapper class
+
+Wrapper class são classes equivalentes aos tipos primitivos. Boxing e unboxing é natural na linguagem. Uso comum de wrapper class são: em campos de entidade em sistemas de informação(importante!), pois tipos referência (classes) aceitam valor `null` e usufruem dos recursos OOP.
+
+![wrapper class demostração](./images/wrapperClass.svg)
