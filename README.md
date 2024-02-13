@@ -918,10 +918,130 @@ for(String car : cars){
 Metódos mais usados em listas:
 
 - `add()` para adicionar um novo item a lista.
+
+```java
+// declarando a lista
+List<String> cars = new ArrayList<>();
+
+// adicionando itens a lista
+cars.add("Bugatti Veyron");
+cars.add("Ferrari 612 Scaglietti");
+cars.add("Camaro RS 327 1968");
+cars.add("AC Shelby Cobra");
+cars.add("Ford Mustang 1964");
+cars.add("Ford Mustang Shelby GT500");
+
+// listando os itens da lista
+for(String car : cars){
+  System.out.println(car);
+}
+```
+
 - `add(index, item)` para adicionar um novo item em uma posição específica da lista.
+
+```java
+// declarando a lista
+List<String> cars = new ArrayList<String>(
+  Arrays.asList("Bugatti Veyron", "Ferrari 612 Scaglietti", "Camaro RS 327 1968", "AC Shelby Cobra", "Ford Mustang 1964", "Ford Mustang Shelby GT500")
+);
+
+// adicionando um item na primeira posição da lista
+cars.add(0,"Porsche 911 SC");
+
+// listando os itens da lista
+for(String car : cars){
+  System.out.println(car);
+}
+```
+
 - `size()` informa o tamanho da lista (inicia em 1).
+
+```java
+// declarando a lista
+List<String> cars = new ArrayList<String>(
+  Arrays.asList("Bugatti Veyron", "Ferrari 612 Scaglietti", "Camaro RS 327 1968", "AC Shelby Cobra", "Ford Mustang 1964", "Ford Mustang Shelby GT500")
+);
+
+// printando no console o tamanho da lista
+System.out.println(cars.size());
+```
+
 - `remove()` remove o item informado da lista. Como parâmetro pode ser passado o index que é onde se encontra o item a ser removido, ou, pode ser passado o item em si que será removido.
+
+```java
+// declarando a lista
+List<String> cars = new ArrayList<String>(
+  Arrays.asList("Bugatti Veyron", "Ferrari 612 Scaglietti", "Camaro RS 327 1968", "AC Shelby Cobra", "Ford Mustang 1964", "Ford Mustang Shelby GT500")
+);
+
+// removendo o segundo item da lista
+cars.remove(1);
+
+// removendo um item da lista pelo seu nome
+cars.remove("Camaro RS 327 1968");
+
+// listando os itens da lista
+for(String car : cars){
+  System.out.println(car);
+}
+```
+
 - `removeIf(predicate)` remove um item se atender a predicate passada por parâmetro.
+
+```java
+// declarando a lista
+List<String> cars = new ArrayList<String>(
+  Arrays.asList("Bugatti Veyron", "Ferrari 612 Scaglietti", "Camaro RS 327 1968", "AC Shelby Cobra", "Ford Mustang 1964", "Ford Mustang Shelby GT500")
+);
+
+// removendo um item por uma condição
+cars.removeIf(car -> car == "Ferrari 612 Scaglietti");
+
+// listando os itens da lista
+for(String car : cars){
+  System.out.println(car);
+}
+```
+
 - `indexOf(item)` retorna o index do item na lista, caso não encontre retorna -1.
+
+```java
+// declarando a lista
+List<String> cars = new ArrayList<String>(
+  Arrays.asList("Bugatti Veyron", "Ferrari 612 Scaglietti", "Camaro RS 327 1968", "AC Shelby Cobra", "Ford Mustang 1964", "Ford Mustang Shelby GT500")
+);
+
+// encontrando o index de um item na lista
+int index = cars.indexOf("Ford Mustang Shelby GT500");
+System.out.println(index);
+```
+
 - `stream().filter(predicate).collect(Collectors.toList())` retorna uma nova lista seguindo os critérios do predicate, parâmetro passado no metódo filter.
+
+```java
+// declarando a lista
+List<String> cars = new ArrayList<String>(
+  Arrays.asList("Bugatti Veyron", "Ferrari 612 Scaglietti", "Camaro RS 327 1968", "AC Shelby Cobra", "Ford Mustang 1964", "Ford Mustang Shelby GT500")
+);
+
+// criando uma nova lista usando um filtro, nova lista terá somente carros que comecem com a letra 'F'
+List<String> fCars = cars.stream().filter(car -> car.charAt(0) == 'F').collect(Collectors.toList());
+
+// listando os itens da lista
+for(String car : fCars){
+  System.out.println(car);
+}
+```
+
 - `stream().filter(predicate).findFirst().orElse(null)` retorna o primeiro item da lista que atenda o predicate, caso contrário retorna null.
+
+```java
+// declarando a lista
+List<String> cars = new ArrayList<String>(
+  Arrays.asList("Bugatti Veyron", "Ferrari 612 Scaglietti", "Camaro RS 327 1968", "AC Shelby Cobra", "Ford Mustang 1964", "Ford Mustang Shelby GT500")
+);
+
+//  buscando por um carro na lista que o décimo caractere seja um 'S'
+String favoriteCar = cars.stream().filter(car -> car.charAt(13) == 'S').findFirst().orElse(null);
+System.out.println(favoriteCar);
+```
