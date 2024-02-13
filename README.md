@@ -872,3 +872,56 @@ for(int number : numbers){
   System.out.println(number);
 }
 ```
+
+## Lista `List`
+
+Lista é uma estrutura de dados:
+
+- Homogênea (dados do mesmo tipo).
+- Ordenada (elementos acessados por meio de posições).
+- Inicia vazia, e seus elementos são alocados sob demanda.
+- Cada elemento ocupa em "nó" (ou nodo) da lista.
+- Cada elemento de uma lista tem um ponteiro para o próximo elemento da lista.
+
+Tipo (interface): Lista.
+
+Classes que implementam: ArrayList, LinkedList, etc.
+
+Vantagens:
+
+- Tamanho variável.
+- Facilidade para se realizar inserções e deleções.
+
+Desvantages:
+
+- Acesso sequencial aos elementos.
+
+Listas não aceita tipos primitivos, deve ser usado as wrapper class.
+
+```java
+// declarando a lista
+List<String> cars = new ArrayList<>();
+
+cars.add("Bugatti Veyron"); // adicionando item a lista
+cars.add("Ferrari 612 Scaglietti"); // adicionando item a lista
+cars.add("Camaro RS 327 1968"); // adicionando item a lista
+cars.add("AC Shelby Cobra"); // adicionando item a lista
+cars.add("Ford Mustang 1964"); // adicionando item a lista
+cars.add("Ford Mustang Shelby GT500"); // adicionando item a lista
+
+
+for(String car : cars){
+  System.out.println(car);
+}
+```
+
+Metódos mais usados em listas:
+
+- `add()` para adicionar um novo item a lista.
+- `add(index, item)` para adicionar um novo item em uma posição específica da lista.
+- `size()` informa o tamanho da lista (inicia em 1).
+- `remove()` remove o item informado da lista. Como parâmetro pode ser passado o index que é onde se encontra o item a ser removido, ou, pode ser passado o item em si que será removido.
+- `removeIf(predicate)` remove um item se atender a predicate passada por parâmetro.
+- `indexOf(item)` retorna o index do item na lista, caso não encontre retorna -1.
+- `stream().filter(predicate).collect(Collectors.toList())` retorna uma nova lista seguindo os critérios do predicate, parâmetro passado no metódo filter.
+- `stream().filter(predicate).findFirst().orElse(null)` retorna o primeiro item da lista que atenda o predicate, caso contrário retorna null.
