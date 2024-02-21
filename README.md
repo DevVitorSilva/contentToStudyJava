@@ -1045,3 +1045,67 @@ List<String> cars = new ArrayList<String>(
 String favoriteCar = cars.stream().filter(car -> car.charAt(13) == 'S').findFirst().orElse(null);
 System.out.println(favoriteCar);
 ```
+
+## Matrizes
+
+Em programação "matriz" é o nome dado a arranjos(arrays) bidimencionais.
+
+**Atenção**: "vetor de votores".
+
+Arranjo(array) é uma estrutura de dados:
+
+- Homogênea (dados do mesmo tipo).
+- Ordenada (elementos acessados por meio de posições).
+- Alocada de uma vez só, em um bloco contíguo de memória.
+
+Vantagens:
+
+- Acesso imediato aos elementos pela sua posição.
+
+Desvantagens:
+
+- Tamanho fixo.
+- Dificuldade para se realizar inserções e deleções.
+
+```java
+int[][] myMatrix = new int[3][3];
+
+myMatrix[0][0] = 1;
+myMatrix[0][1] = 2;
+myMatrix[0][2] = 3;
+
+myMatrix[1][0] = 4;
+myMatrix[1][1] = 5;
+myMatrix[1][2] = 6;
+
+myMatrix[2][0] = 7;
+myMatrix[2][1] = 8;
+myMatrix[2][2] = 9;
+
+for(int i1 = 0; i1 < 3; i1++){
+
+  for(int i2 = 0; i2 < 3; i2++){
+    System.out.print(myMatrix[i1][i2] + " ");
+  }
+
+  System.out.println();
+}
+```
+
+No primeiro colchete se coloca a quantidade de arrays que terá dentro da matriz, no segundo colchete se coloca
+a quatidade em que cada array dentro da matriz terá.
+
+Representando a matriz acima:
+
+```java
+[
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]
+
+// Saida no console
+// 1 2 3
+// 4 5 6
+// 7 8 9
+```
