@@ -1109,3 +1109,37 @@ Representando a matriz acima:
 // 4 5 6
 // 7 8 9
 ```
+
+## Trabalhando com datas
+
+### Data - [ hora ] local:
+
+- ano - mês - dia - [ hora opcional ] sem fuso horário.
+
+**Quando usar?**
+
+Quando o momento exato não interessa a pessoas de outro fuso horário.
+
+Uso comum: sistemas de região única.
+
+- Data de nascimento: `13/06/2001`.
+- Data - hora da venda: `13/08/2022 às 15:32` (presumindo não interessar o fuso horário).
+
+### Data - hora global:
+
+- ano - mês - dia - hora com fuso horário.
+
+**Quando usar?**
+
+Quando o momento exato interessa a pessoas de outro fuso horário.
+
+Uso comum: sistemas multi-região, web.
+
+- Quando será o sorteio? `21/08/2022 às 20h (horário de São Paulo)`.
+- Quando o comentário foi postado? `há 17 minutos`.
+- Quando foi realizado a venda? `13/08/2022 às 15:32 (horário de São Paulo)`.
+- Inicio e fim do evento? `21/08/2022 às 14h até 16h (horário de São Paulo)`.
+
+### Duração
+
+É o tempo decorrido entre duas data - horas.
