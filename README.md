@@ -1144,7 +1144,7 @@ Uso comum: sistemas multi-região, web.
 
 É o tempo decorrido entre duas data - horas.
 
-## Timezone (fuso horário)
+### Timezone (fuso horário)
 
 GMT - Greenwich Mean Time
 
@@ -1162,3 +1162,20 @@ Muitas linguagens/tecnologias usam nomes para as timezones:
 
 - "US/Pacific"
 - "America/Sao_Paulo"
+
+### Padrão ISO 8601
+
+É uma especificação para representar data e hora na forma de texto.
+
+Data - [ hora ] local:
+
+- `2022-07-21` somente data.
+- `2022-07-21T1'14:52` data e hora.
+- `2022-07-21T1'14:52:09` data, hora e segundos.
+- `2022-07-21T1'14:52:09.4073` data, hora, segundos e milisegundos.
+
+Data - hora global:
+
+- `2022-07-23T14:52:09Z` data hora global.
+- `2022-07-23T14:52:09.254935Z` data hora global com milisegundos.
+- `2022-07-23T14:52:09-03:00` data hora global, indicando o GMT-3.
