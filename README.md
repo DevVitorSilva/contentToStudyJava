@@ -1203,5 +1203,3 @@ Data - hora global:
 - `2022-07-23T14:52:09Z` data hora global.
 - `2022-07-23T14:52:09.254935Z` data hora global com milisegundos.
 - `2022-07-23T14:52:09-03:00` data hora global, indicando o GMT-3.
-
-tets
