@@ -1125,6 +1125,30 @@ Uso comum: sistemas de região única.
 - Data de nascimento: `13/06/2001`.
 - Data - hora da venda: `13/08/2022 às 15:32` (presumindo não interessar o fuso horário).
 
+#### Operações importantes com data-hora local
+
+- `LocalDate.now()` retorna a hora local atual.
+
+```java
+import java.time.LocalDate;
+
+LocalDate myLocalDate = LocalDate.now();
+
+System.out.println(myLocalDate);
+```
+
+- `LocalDate.now().toString()` retorna a hora local atual no padrão ISO 8601.
+
+```java
+import java.time.LocalDate;
+
+LocalDate myLocalDate = LocalDate.now();
+
+System.out.println(myLocalDate.toString());
+```
+
+- `DateTimeFormatter.ofPattern()` cria um formato de data customizado para ser representado em texto.
+
 ### Data - hora global:
 
 - ano - mês - dia - hora com fuso horário.
@@ -1146,13 +1170,13 @@ Uso comum: sistemas multi-região, web.
 
 ### Timezone (fuso horário)
 
-GMT - Greenwich Mean Time
+**GMT** - Greenwich Mean Time:
 
 - Horário de londres.
-- Horário padrão UTC - Coordinated Universal Time.
+- Horário padrão **UTC** - Coordinated Universal Time.
 - Também chamado de "Z" time, ou Zulu Time.
 
-Outros fuso horários são relativos ao GMT/UTC
+Outros fuso horários são relativos ao **GMT/UTC**:
 
 - São Paulo: GMT-3
 - Manaus: GMT-4
