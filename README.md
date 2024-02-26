@@ -1163,6 +1163,21 @@ System.out.println(dateNow.format(fmt));
 
 ```
 
+`LocalDate.now().format()` formata uma data em String no modelo de data customizado.
+
+```java
+// instanciando uma data local atual
+LocalDate dateNow = LocalDate.now();
+
+// criando um formato de data customizado
+DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+String dateFmt = dateNow.format(fmt);
+
+// imprimindo no console 
+System.out.println(dateFmt);
+```
+
 `LocalDate.parse()` cria um objeto data a partir de uma data String válida.
 
 ```java
