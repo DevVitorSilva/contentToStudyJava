@@ -1175,6 +1175,16 @@ LocalDate parseDate = LocalDate.parse(myDate);
 System.out.println(parseDate);
 ```
 
+`LocalDate.of()` cria objeto data a partir de números inteiros.
+
+```java
+// criando uma data local
+LocalDate myDate = LocalDate.of(2024,2,25);
+
+// imprimindo no console a data criada
+System.out.println(myDate); 
+```
+
 ### Data - hora global:
 
 - ano - mês - dia - hora com fuso horário.
