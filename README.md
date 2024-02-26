@@ -1142,12 +1142,38 @@ System.out.println(myLocalDate);
 ```java
 import java.time.LocalDate;
 
+// instanciando uma data local atual
 LocalDate myLocalDate = LocalDate.now();
 
+// imprimindo no console
 System.out.println(myLocalDate.toString());
 ```
 
 - `DateTimeFormatter.ofPattern()` cria um formato de data customizado para ser representado em texto.
+
+```java
+// instanciando uma data local atual
+LocalDate dateNow = LocalDate.now();
+
+// criando um formato de data customizado
+DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+// imprimindo no console 
+System.out.println(dateNow.format(fmt));
+
+```
+
+`LocalDate.parse()` cria um objeto data a partir de uma data String válida.
+
+```java
+String myDate = "2024-02-25";
+
+// convertendo uma String data válida em um objeto data local
+LocalDate parseDate = LocalDate.parse(myDate);
+
+// imprimindo no console 
+System.out.println(parseDate);
+```
 
 ### Data - hora global:
 
