@@ -1127,78 +1127,84 @@ Uso comum: sistemas de região única.
 
 #### Operações importantes com data-hora local
 
-- `LocalDate.now()` retorna a hora local atual.
+- Data - hora local (agora, momento atual)
+  - `LocalDate.now()` retorna a hora local atual.
 
-```java
-import java.time.LocalDate;
+    ```java
+    import java.time.LocalDate;
 
-LocalDate myLocalDate = LocalDate.now();
+    LocalDate myLocalDate = LocalDate.now();
 
-System.out.println(myLocalDate);
-```
+    System.out.println(myLocalDate);
+    ```
 
-- `LocalDate.now().toString()` retorna a hora local atual no padrão ISO 8601.
+- Texto em formato ISO8601
+  - `LocalDate.now().toString()` retorna a hora local atual no padrão ISO 8601.
 
-```java
-import java.time.LocalDate;
+    ```java
+    import java.time.LocalDate;
 
-// instanciando uma data local atual
-LocalDate myLocalDate = LocalDate.now();
+    // instanciando uma data local atual
+    LocalDate myLocalDate = LocalDate.now();
 
-// imprimindo no console
-System.out.println(myLocalDate.toString());
-```
+    // imprimindo no console
+    System.out.println(myLocalDate.toString());
+    ```
 
-- `DateTimeFormatter.ofPattern()` cria um formato de data customizado para ser representado em texto.
+- Texto formatado customizado
+  - `DateTimeFormatter.ofPattern()` cria um formato de data customizado para ser representado em texto.
 
-```java
-// instanciando uma data local atual
-LocalDate dateNow = LocalDate.now();
+    ```java
+    // instanciando uma data local atual
+    LocalDate dateNow = LocalDate.now();
 
-// criando um formato de data customizado
-DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    // criando um formato de data customizado
+    DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-// imprimindo no console 
-System.out.println(dateNow.format(fmt));
+    // imprimindo no console 
+    System.out.println(dateNow.format(fmt));
 
-```
+    ```
 
-`LocalDate.now().format()` formata uma data em String no modelo de data customizado.
+  - `LocalDate.now().format()` formata uma data em String no modelo de data customizado.
 
-```java
-// instanciando uma data local atual
-LocalDate dateNow = LocalDate.now();
+    ```java
+    // instanciando uma data local atual
+    LocalDate dateNow = LocalDate.now();
 
-// criando um formato de data customizado
-DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    // criando um formato de data customizado
+    DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-String dateFmt = dateNow.format(fmt);
+    String dateFmt = dateNow.format(fmt);
 
-// imprimindo no console 
-System.out.println(dateFmt);
-```
+    // imprimindo no console 
+    System.out.println(dateFmt);
+    ```
 
-`LocalDate.parse()` cria um objeto data a partir de uma data String válida.
+- Criar um objeto data usando uma String
 
-```java
-String myDate = "2024-02-25";
+  - `LocalDate.parse()` cria um objeto data a partir de uma data String válida.
 
-// convertendo uma String data válida em um objeto data local
-LocalDate parseDate = LocalDate.parse(myDate);
+    ```java
+    String myDate = "2024-02-25";
 
-// imprimindo no console 
-System.out.println(parseDate);
-```
+    // convertendo uma String data válida em um objeto data local
+    LocalDate parseDate = LocalDate.parse(myDate);
 
-`LocalDate.of()` cria objeto data a partir de números inteiros.
+    // imprimindo no console 
+    System.out.println(parseDate);
+    ```
 
-```java
-// criando uma data local
-LocalDate myDate = LocalDate.of(2024,2,25);
+- Criar uma data passando números inteiros
+  - `LocalDate.of()` cria objeto data a partir de números inteiros.
 
-// imprimindo no console a data criada
-System.out.println(myDate); 
-```
+    ```java
+    // criando uma data local
+    LocalDate myDate = LocalDate.of(2024,2,25);
+
+    // imprimindo no console a data criada
+    System.out.println(myDate); 
+    ```
 
 ### Data - hora global:
 
