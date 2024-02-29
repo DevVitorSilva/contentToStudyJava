@@ -1206,6 +1206,66 @@ Uso comum: sistemas de região única.
     System.out.println(myDate); 
     ```
 
+- Obter o dia do mês
+  - `getDayOfMonth` retorna um número inteiro referente ao dia do mês
+  
+    ```java
+    LocalDate myDate = LocalDate.now();
+    int dayOfMonth = myDate.getDayOfMonth();
+
+    System.out.println(dayOfMonth);
+    ```
+
+- Obter o nome do mês
+  - `getMonth` retorna o nome do mês (tipo de dado é um `Enum`)
+
+    ```java
+    LocaDate myDate = LocalDate.now();
+    Month monthName = myDate.getMonth();
+
+    System.out.println(monthName);
+    ```
+
+- Obter o número referente ao mês do ano
+  - `getMonthValue` retorna um número inteiro referente ao mês do ano
+
+    ```java
+    LocaDate myDate = LocalDate.now();
+    int month = myDate.getMonthValue();
+
+    System.out.println(month);
+    ```
+
+- Obter o dia do mês
+  - `getDayOfMonth()` retorna um número inteiro referente ao dia do mês
+
+    ```java
+    LocalDate myDate = LocalDate.now();
+    int dayOfMonth = myDate.getDayOfMonth();
+
+    System.out.println(dayOfMonth);
+    ```
+
+- Obter o dia da semana
+  - `getDayOfWeek()` retorna um `Enum` com o dia da semana
+
+    ```java
+    LocalDate myDate = LocalDate.now();
+    DayOfWeek dayOfWeek = myDate.getDayOfWeek();
+
+    System.out.println(dayOfWeek);
+    ```
+
+- Obter o ano
+  - `getYear()` retorna um número inteiro com o ano
+
+    ```java
+    LocalDate myDate = LocalDate.now();
+    int year = myDate.getYear();
+
+    System.out.println(year);
+    ```
+
 ### Data - hora global:
 
 - ano - mês - dia - hora com fuso horário.
