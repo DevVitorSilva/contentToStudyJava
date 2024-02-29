@@ -1207,7 +1207,7 @@ Uso comum: sistemas de região única.
     ```
 
 - Obter o dia do mês
-  - `getDayOfMonth` retorna um número inteiro referente ao dia do mês
+  - `getDayOfMonth()` retorna um número inteiro referente ao dia do mês
   
     ```java
     LocalDate myDate = LocalDate.now();
@@ -1217,7 +1217,7 @@ Uso comum: sistemas de região única.
     ```
 
 - Obter o nome do mês
-  - `getMonth` retorna o nome do mês (tipo de dado é um `Enum`)
+  - `getMonth()` retorna o nome do mês (tipo de dado é um `Enum`)
 
     ```java
     LocaDate myDate = LocalDate.now();
@@ -1227,7 +1227,7 @@ Uso comum: sistemas de região única.
     ```
 
 - Obter o número referente ao mês do ano
-  - `getMonthValue` retorna um número inteiro referente ao mês do ano
+  - `getMonthValue()` retorna um número inteiro referente ao mês do ano
 
     ```java
     LocaDate myDate = LocalDate.now();
