@@ -1166,7 +1166,7 @@ Uso comum: sistemas de região única.
 
     ```
 
-  - `LocalDate.now().format()` formata uma data em String no modelo de data customizado.
+  - `format()` formata uma data em String no modelo de data customizado.
 
     ```java
     // instanciando uma data local atual
