@@ -1266,6 +1266,36 @@ Uso comum: sistemas de região única.
     System.out.println(year);
     ```
 
+- Subtrair dias de uma data
+  - `minusDays()` retorna um LocalDate com os dias subtraidos
+
+    ```java
+    LocalDate myDate = LocalDate.now();
+    LocalDate dateMinusDay = myDate.minusDays(10);
+
+    System.out.println(dateMinusDay);
+    ```
+
+- Subtrair meses de uma data 
+  - `minusMonths` retorna um LocalDate com os meses subtraidos
+
+    ```java
+    LocalDate myDate = LocalDate.now();
+    LocalDate dateMinusMonths = myDate.minusMonths(10);
+
+    System.out.println(dateMinusMonths);
+    ```
+
+- Subtrair anos de uma data
+  - `minusYears()` retorna um LocalDate com os anos subtraidos
+
+    ```java
+    LocalDate myDate = LocalDate.now();
+    LocalDate dateMinusYears = myDate.minusYears(10);
+
+    System.out.println(dateMinusYears);
+    ```
+
 ### Data - hora global:
 
 - ano - mês - dia - hora com fuso horário.
