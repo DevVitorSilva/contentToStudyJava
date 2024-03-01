@@ -1348,6 +1348,20 @@ Um Instante é um momento na linha do tempo em UTC, uma contagem de nanossegundo
 
 É o tempo decorrido entre duas data - horas.
 
+A classe `Duration` representa um intervalo de tempo em segundos ou nanossegundos e é mais adequada para lidar com períodos de tempo mais curtos, em casos que exigem mais precisão.
+
+- Saber a duração entre dois instantes
+  - `between()` calcula a duração entre dois instantes
+
+    ```java
+    Instant startDate = Instant.parse("2023-10-03T10:15:30.00Z");
+    Instant endDate = Instant.parse("2023-10-03T10:16:30.00Z");
+
+    Duration duration = Duration.between(startDate,endDate);
+
+    System.out.println(duration);
+    ```
+
 ### Timezone (fuso horário)
 
 **GMT** - Greenwich Mean Time:
