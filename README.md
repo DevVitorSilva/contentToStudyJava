@@ -1277,7 +1277,7 @@ Uso comum: sistemas de região única.
     ```
 
 - Subtrair meses de uma data 
-  - `minusMonths` retorna um LocalDate com os meses subtraidos
+  - `minusMonths()` retorna um LocalDate com os meses subtraidos
 
     ```java
     LocalDate myDate = LocalDate.now();
@@ -1310,6 +1310,39 @@ Uso comum: sistemas multi-região, web.
 - Quando o comentário foi postado? `há 17 minutos`.
 - Quando foi realizado a venda? `13/08/2022 às 15:32 (horário de São Paulo)`.
 - Inicio e fim do evento? `21/08/2022 às 14h até 16h (horário de São Paulo)`.
+
+### Instant
+
+Um Instante é um momento na linha do tempo em UTC, uma contagem de nanossegundos desde a época do primeiro momento de 1970 UTC. [Link para uma explicação no stack overflow](https://stackoverflow.com/questions/32437550/whats-the-difference-between-instant-and-localdatetime).
+
+- Criar um novo objeto Instant
+  - `Instant.now()` cria um novo objeto Instant
+
+    ```java
+    Instant myInstant = Instant.now();
+
+    System.out.println(myInstant);
+    ```
+
+- Subtrair dias
+  - `minus()` subtrair dias de um Instant
+
+    ```java
+    Instant myInstant = Instant.now();
+    Instant minusInstant = myInstant.minus(10, ChornoUnit.DAYS);
+
+    System.out.println(minusInstant);
+    ```
+
+- Somar dias
+  - `plus()` somar dias em um objeto Instant
+
+    ```java
+    Instant myInstant = Instant.now();
+    Instant minusInstant = myInstant.plus(10, ChornoUnit.DAYS);
+
+    System.out.println(minusInstant);
+    ```
 
 ### Duração
 
