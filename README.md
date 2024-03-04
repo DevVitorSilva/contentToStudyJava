@@ -1296,6 +1296,29 @@ Uso comum: sistemas de região única.
     System.out.println(dateMinusYears);
     ```
 
+- Converter LocalDate para LocalDateTime
+  - `atStartOfDay()` retorna um LocalDateTime no inicio do dia(às 00:00)
+
+    ```java
+    LocalDate localDate = LocalDate.parse("2024-03-04");
+    LocalDateTime localDateTime = localDate.atStartOfDay();
+    System.out.println(localDateTime);    
+    ```
+
+  - `atTime()` retorna um LocalDateTime com a hora atual
+
+    ```java
+    LocalDateTime localDateTime = localDate.atTime(LocalTime.now());
+    System.out.println(localDateTime);
+    ```
+  
+  - `atTime()` retorna um LocalDateTime com tempo específico, parâmetros(horas, minutos, segundos)
+
+  ```java
+  LocalDateTime localDateTime = localDate.atTime(04, 30, 56);
+  System.out.println(localDateTime);
+  ```
+
 ### Data - hora global:
 
 - ano - mês - dia - hora com fuso horário.
@@ -1390,6 +1413,16 @@ Uso comum: sistemas multi-região, web.
     String dateFmt = dateNow.format(fmt);
 
     System.out.println(dateFmt);
+    ```
+
+- Converter LocalDateTime para LocalDate
+  - `toLocalDate()` converte LocalDateTime em LocalDate
+
+    ```java
+    LocalDateTime localDateTime = LocalDateTime.now();
+    LocalDate localDate = localDateTime.toLocalDate();
+        
+    System.out.println(localDate);
     ```
 
 ### Instant
