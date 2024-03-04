@@ -1311,6 +1311,87 @@ Uso comum: sistemas multi-região, web.
 - Quando foi realizado a venda? `13/08/2022 às 15:32 (horário de São Paulo)`.
 - Inicio e fim do evento? `21/08/2022 às 14h até 16h (horário de São Paulo)`.
 
+#### Operações importantes com data-hora global
+
+- Data - hora global (agora, momento atual)
+  - `LocalDateTime.now()` retorna a hora global atual.
+
+    ```java
+    import java.time.LocalDateTime;
+
+    LocalDateTime localDateTime = LocalDate.now();
+
+    System.out.println(localDateTime);
+    ```
+
+- Criar um objeto data global passando uma String
+  - `parse()` cria um objeto data global passando um String como argumento
+
+    ```java
+    LocalDateTime localDateTime = LocalDateTime.parse("2024-03-04T15:21:50.630");
+
+    System.out.println(localDateTime);
+    ```
+
+- Criar objeto data global passando números inteiros
+  - `of()` cria um objeto data global passando números inteiros como argumentos(ano, mês, dia, hora, minuto)
+
+    ```java
+    LocalDateTime localDateTime = LocalDateTime.of(2024,3,4,15,27);
+
+    System.out.println(localDateTime);
+    ```
+
+- Formatar no padrão ISO 8601
+  - `toString()` transforma o objeto data global em uma String no formato ISO 8601
+
+    ```java
+    String localDateTime = LocalDateTime.now().toString();
+
+    System.out.println(localDateTime);
+    ```
+
+- Obter o dia do mês
+  - `getDayOfMonth()` retorna um inteiro referente ao dia do mês
+
+    ```java
+    LocalDateTime localDateTime = LocalDateTime.now();
+    int day = localDateTime.getDayOfMonth();
+
+    System.out.println(day);
+    ```
+
+- Adicionar dias
+  - `plusDays()` adiciona dias da data hora global
+
+    ```java
+    LocalDateTime localDateTime = LocalDateTime.now();
+    LocalDateTime day = localDateTime.plusDays(10);
+
+    System.out.println(localDateTime);
+    ```
+
+- Subtrair dias
+  - `minusDays()` subtrai dias da data hora global
+
+    ```java
+    LocalDateTime localDateTime = LocalDateTime.now();
+    LocalDateTime day = localDateTime.minusDays(10);
+
+    System.out.println(localDateTime);
+    ```
+
+- Formatando data global customizada
+  - `format()` formata uma data global para um formato customizado
+
+    ```java
+    LocalDateTime dateNow = LocalDateTime.now();
+    DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    String dateFmt = dateNow.format(fmt);
+
+    System.out.println(dateFmt);
+    ```
+
 ### Instant
 
 Um Instante é um momento na linha do tempo em UTC, uma contagem de nanossegundos desde a época do primeiro momento de 1970 UTC. [Link para uma explicação no stack overflow](https://stackoverflow.com/questions/32437550/whats-the-difference-between-instant-and-localdatetime).
