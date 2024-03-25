@@ -1,4 +1,4 @@
-# Registro dos meus estudos de conteudo Java
+# Registro dos meus estudos de conteúdo Java
 
 ## Java ME, Java SE e Java EE
 
@@ -1532,3 +1532,30 @@ enum Level {
 Level myLevel = Level.MEDIUM;
 ```
 
+## Design
+
+[Livro sobre engenharia de software moderna](https://engsoftmoderna.info/).
+
+Em um sistema orientado a objetos, de modo geral "tudo" é objeto. 
+
+Por questões de design tais como organização, flexibilidade, reuso, delegação, etc. há várias categorias de classes:
+
+- Views
+
+  Views são classes responsáveis pela apresentação da interface gráfica do sistema, incluindo janelas, botões, menus, barras de rolagem, etc.
+
+- Controllers
+
+  classes que tratam e interpretam eventos gerados por dispositivos de entrada, como mouse e teclado. Como resultado de tais eventos, Controladoras podem solicitar uma alteração no estado do Modelo ou da Visão. Suponha, por exemplo, uma Calculadora. Quando o usuário clica em um botão "+", uma classe Controladora deve capturar esse evento e chamar um método do Modelo. Como um segundo exemplo, quando o usuário clicar no botão "Dark UI", cabe também a uma classe Controladora solicitar à Visão para mudar as cores da interface gráfica para tons mais escuros.
+
+- Entities
+
+  Uma Entity (Entidade) é um objeto leve de domínio persistente utilizado para representar uma tabela da base de dados, sendo que cada instância da entidade corresponde a uma linha da tabela.
+
+- services
+
+  Os Services são responsáveis pela lógica de negócio da sua aplicação, além de ser responsável por se comunicar com as camadas mais internas do Software, como por exemplo, uma camada de Dados.
+
+- repositories
+
+  Um Repository (Repositório) é um objeto que isola os objetos ou entidades do domínio do código que acessa o banco de dados.
