@@ -1511,3 +1511,24 @@ Data - hora global:
 - `2022-07-23T14:52:09Z` data hora global.
 - `2022-07-23T14:52:09.254935Z` data hora global com milisegundos.
 - `2022-07-23T14:52:09-03:00` data hora global, indicando o GMT-3.
+
+## Enum `enum`
+
+`enum` é um tipo especial que serve para especificar de forma literal um conjunto de constantes relacionadas.
+
+Vantagens: melhor semântica, código mais legível e auxiliado pelo compilador.
+
+Links para mais conteúdo sobre enum:
+- [w3schools](https://www.w3schools.com/java/java_enums.asp)
+- [geeks for geeks](https://www.geeksforgeeks.org/enum-in-java/)
+
+```java
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
+}
+
+Level myLevel = Level.MEDIUM;
+```
+
