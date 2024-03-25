@@ -1559,3 +1559,52 @@ Por questões de design tais como organização, flexibilidade, reuso, delegaç�
 - repositories
 
   Um Repository (Repositório) é um objeto que isola os objetos ou entidades do domínio do código que acessa o banco de dados.
+
+## Composição
+
+É um tipo de associação que permite que um objeto contenha outro. Relação "tem-um" ou "tem-vários".
+
+Vantagens: 
+- Organização: divisão de responsabilidades
+- Coesão
+- Flexibilidade
+- Reuso
+
+```java
+public class FirstAndLastName{
+  private String firstName;
+  private String lastName;
+
+  // construtor padrão sem argumentos
+  public FirstAndLastName(){}
+
+  // construtor com argumentos
+  public FirstAndLastName(String firstName, String lastName){
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+}
+```
+
+```java
+public class MoreInfo{
+  private FirstAndLastName firstAndLastName;
+  private Integer age;
+  private String address;
+  
+  // construtor padrão sem argumento
+  public MoreInfo(){}
+
+  // construtor com argumentos.
+  /* 
+    dos argumentos que serão passados neste
+    construtor está um objeto do tipo
+    FirstAndLastName que é a classe criada acima.
+  */
+  public MoreInfo(FirstAndLastName firstAndLastName, Integer age, String address){
+    this.FirstAndLastName = firstAndLastName;
+    this.age = age;
+    this.address = address;
+  }
+}
+```
