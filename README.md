@@ -1608,3 +1608,18 @@ public class MoreInfo{
   }
 }
 ```
+
+## StringBuilder
+
+A classe StringBuilder em Java é empregada na criação e manipulação de informações do tipo string dinâmicas, ou seja, strings que são modificáveis. Seu uso é altamente recomendado em programas onde as strings são frequentemente concatenadas ou sofrem algum outro tipo de manipulação.
+
+```java
+// criando um StringBuilder
+StringBuilder hello = new StringBuilder("Hello");
+
+// concatenando uma String
+hello.append(" World!");
+
+// printando no console
+System.out.println(hello);
+```
