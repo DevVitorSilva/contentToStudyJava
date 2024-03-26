@@ -1623,3 +1623,86 @@ hello.append(" World!");
 // printando no console
 System.out.println(hello);
 ```
+
+## Herança
+
+É um tipo de associação que permite que uma classe herde todos dados e comportamentos de outra. Herança é uma associação entre classes (e não entre objetos).
+
+Vantagens
+
+- Reuso
+- Polimorfismo
+- Generalização / especialização
+- Superclasse (classe base) e subclasse (classe derivada)
+- Herança / extensão
+
+```java
+// criando a classe base (superclasse)
+public class NamePerson{
+  private String firstName;
+  private String lastName;
+
+  // construtor padrão
+  public Name(){}
+
+  // construtor com argumentos
+  public Name(String firstname, String lastName){
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  // getters e setters
+  public String getFirstName(){
+    return firstName;
+  }
+
+  public void setFirstName(String firstName){
+    this.firstName = firstName;
+  }
+
+  public String getLastName(){
+    return lastName;
+  }
+
+  public void setLastName(String lastName){
+    this.lastName = lastName;
+  }
+}
+
+// criando a classe derivada (subclasse)
+public class MoreInfoPerson extends NamePerson{
+  private Integer age;
+  private String address;
+
+  // construtor padrão
+  public MoreInfoPerson(){
+    super();
+  }
+
+  // construtor com argumentos
+  public MoreInfoPerson(String firstName, String lastName, Integer age, String address){
+    // passando argumentos para a classe base (superclasse)
+    super(firstName, lastName);
+    this.age = age;
+    this.address = address;
+  }
+
+  // getters e setters
+  // a classe derivada também tem acesso aos getters e setters da classe base (superclasse)
+  public Integer getAge(){
+    return age;
+  }
+
+  public void setAge(Integer age){
+    this.age = age;
+  }
+
+  public String getAddress(){
+    return address;
+  }
+
+  public void setAddress(String address){
+    this.address = address;
+  }
+}
+```
