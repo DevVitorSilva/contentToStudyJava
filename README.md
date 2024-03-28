@@ -1645,10 +1645,10 @@ public class NamePerson{
   private String lastName;
 
   // construtor padrão
-  public Name(){}
+  public NamePerson(){}
 
   // construtor com argumentos
-  public Name(String firstname, String lastName){
+  public NamePerson(String firstname, String lastName){
     this.firstName = firstName;
     this.lastName = lastName;
   }
@@ -1707,4 +1707,29 @@ public class MoreInfoPerson extends NamePerson{
     this.address = address;
   }
 }
+```
+
+## Upcasting, Downcasting e `instanceof()`
+
+Upcasting é a conversão de tipo de um objeto filho (classe derivada) para um objeto pai (classe base). **O upcasting pode ser feito implicitamente**. O upcasting nos dá flexibilidade para acessar os membros da classe pai (classe base), mas não é possível acessar todos os membros da classe filha (classe derivada) usando esse recurso. Em vez de todos os membros, podemos acessar alguns membros específicos da classe filha (classe derivada). Por exemplo, podemos acessar os métodos substituídos.
+
+Downcasting: Da mesma forma, downcasting significa a conversão de um objeto pai (classe base) para um objeto filho (classe derivada). **O downcasting não pode ser implícito**.
+
+`instanceof()` verifica se um objeto é uma isntância de uma classe ou interface específica, compara a instância com o tipo. O valor de retorno é `true` ou `false`.
+
+```java
+/*
+  classes usadas nos exemplos abaixos podem ser encontradas no tópico sobre herança
+*/
+
+// upcasting
+// convertendo uma classe derivada em uma classe base
+NamePerson namePerson = new MoreInfoPerson();
+
+// downcasting explícito
+// convertendo uma classe base em uma classe derivada
+MoreInfoPerson moreInfoPerson = (MoreInfoPerson)namePerson;
+
+// imprime no console true
+System.out.println(namePerson instanceof MoreInfoPerson);
 ```
