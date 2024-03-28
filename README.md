@@ -1709,7 +1709,7 @@ public class MoreInfoPerson extends NamePerson{
 }
 ```
 
-## Upcasting, Downcasting e `instanceof()`
+## Upcasting, Downcasting e `instanceof`
 
 Upcasting é a conversão de tipo de um objeto filho (classe derivada) para um objeto pai (classe base). **O upcasting pode ser feito implicitamente**. O upcasting nos dá flexibilidade para acessar os membros da classe pai (classe base), mas não é possível acessar todos os membros da classe filha (classe derivada) usando esse recurso. Em vez de todos os membros, podemos acessar alguns membros específicos da classe filha (classe derivada). Por exemplo, podemos acessar os métodos substituídos.
 
