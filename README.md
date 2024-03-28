@@ -1715,7 +1715,7 @@ Upcasting é a conversão de tipo de um objeto filho (classe derivada) para um o
 
 Downcasting: Da mesma forma, downcasting significa a conversão de um objeto pai (classe base) para um objeto filho (classe derivada). **O downcasting não pode ser implícito**.
 
-`instanceof()` verifica se um objeto é uma isntância de uma classe ou interface específica, compara a instância com o tipo. O valor de retorno é `true` ou `false`.
+`instanceof` verifica se um objeto é uma isntância de uma classe ou interface específica, compara a instância com o tipo. O valor de retorno é `true` ou `false`.
 
 ```java
 /*
